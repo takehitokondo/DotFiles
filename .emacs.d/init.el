@@ -40,7 +40,7 @@
 
 ;;; \左に行番号表示
 (require 'linum)
-(global-linum-mode)
+;; (global-linum-mode)
 ;;;
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
