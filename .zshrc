@@ -198,6 +198,7 @@ alias r++='g++ `root-config --cflags --libs`'
 export LAB="$HOME/OneDrive - Hiroshima University/LabOneDrive"
 export MS="$HOME/OneDrive - Hiroshima University/LabOneDrive/lvm/MassShift"
 export WOBG="$HOME/OneDrive - Hiroshima University/LabOneDrive/lvm/MassShift/wobg"
+export E16GIT="$HOME/OneDrive - Hiroshima University/LabOneDrive/e16/github"
 
 # pyenv の環境変数の設定
 export PYENV_ROOT="$HOME/.pyenv"
