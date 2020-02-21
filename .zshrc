@@ -196,6 +196,8 @@ alias r++='g++ `root-config --cflags --libs`'
 
 #export LAB='/Users/kondotakehitolab/OneDrive - Hiroshima University/LabOneDrive'
 export LAB="$HOME/OneDrive - Hiroshima University/LabOneDrive"
+export E16="$HOME/OneDrive - Hiroshima University/LabOneDrive/e16/"
+export GTRASD="$HOME/OneDrive - Hiroshima University/LabOneDrive/e16/GTR-ASD"
 export MS="$HOME/OneDrive - Hiroshima University/LabOneDrive/lvm/MassShift"
 export WOBG="$HOME/OneDrive - Hiroshima University/LabOneDrive/lvm/MassShift/wobg"
 export E16GIT="$HOME/OneDrive - Hiroshima University/LabOneDrive/e16/github"
