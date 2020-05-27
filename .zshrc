@@ -205,7 +205,7 @@ export WOBG="$HOME/OneDrive - Hiroshima University/LabOneDrive/lvm/MassShift/wob
 export E16GIT="$HOME/OneDrive - Hiroshima University/LabOneDrive/e16/github"
 
 # 
-alias startsshs='sh /Users/kondou-takehito/OneDrive\ -\ Hiroshima\ University/LabOneDrive/start_sshs.sh'
+alias startsshs="sh $HOME/OneDrive\ -\ Hiroshima\ University/LabOneDrive/start_sshs.sh"
 
 # prezto の設定ファイルを読み込む
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
