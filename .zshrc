@@ -188,12 +188,14 @@ export LESS='--tabs=4 --no-init --LONG-PROMPT --ignore-case'
 export GREP_OPTIONS='--color=auto'
 
 # ROOT の環境設定
-cd /usr/local/root-6.12.06/cmake_build
-source bin/thisroot.sh
-cd - > /dev/null
-alias root="root -l"
-alias r++='g++ `root-config --cflags --libs`'
-
+# cd /usr/local/root-6.12.06/cmake_build
+# source bin/thisroot.sh
+# cd - > /dev/null
+# alias root="root -l"
+# alias r++='g++ `root-config --cflags --libs`'
+# Homebrew's ROOT
+pushd /usr/local >/dev/null; . bin/thisroot.sh; popd >/dev/null
+ 
 #export LAB='/Users/kondotakehitolab/OneDrive - Hiroshima University/LabOneDrive'
 export LAB="$HOME/OneDrive - Hiroshima University/LabOneDrive"
 export E16="$HOME/OneDrive - Hiroshima University/LabOneDrive/e16/"
@@ -202,10 +204,8 @@ export MS="$HOME/OneDrive - Hiroshima University/LabOneDrive/lvm/MassShift"
 export WOBG="$HOME/OneDrive - Hiroshima University/LabOneDrive/lvm/MassShift/wobg"
 export E16GIT="$HOME/OneDrive - Hiroshima University/LabOneDrive/e16/github"
 
-# pyenv の環境変数の設定
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# 
+alias startsshs='sh /Users/kondou-takehito/OneDrive\ -\ Hiroshima\ University/LabOneDrive/start_sshs.sh'
 
 # prezto の設定ファイルを読み込む
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -219,3 +219,15 @@ function peco-history-selection() {
 
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
+
+# pyenv の環境変数の設定 these are not needed because I installed pyenv via homebrew
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#export PATH="$PYENV_ROOT/versions/anaconda3-2019.10/bin:$PATH"
+
+# enable pyenv's shims and autocompletion
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
