@@ -5,10 +5,13 @@ DotFiles repository for copying the configuration
 First, take a backup of original dot files:  
 ~/.emacs.d/, ~/.rootlogon.C, ~/.vim, ~/.zshrc
 
-Second, ```cd ~; git pull```
+Second, 
+```
+git clone https://github.com/takehitokondo/DotFiles.git ~/.DotFiles
+```
 
 Lastly, 
 ```
-cd ~/DotFiles  
+cd ~/.DotFiles  
 sh dotfilesLink.sh
 ```
