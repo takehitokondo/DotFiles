@@ -207,8 +207,20 @@ export E16GIT="$HOME/OneDrive - Hiroshima University/LabOneDrive/e16/github"
 # 
 alias startsshs="sh $HOME/OneDrive\ -\ Hiroshima\ University/LabOneDrive/start_sshs.sh"
 
+
 # prezto の設定ファイルを読み込む
-source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
 
 # pecoでzshのコマンド履歴検索を超快適にする！
 function peco-history-selection() {

@@ -14,4 +14,5 @@ Lastly,
 ```
 cd ~/.DotFiles  
 sh dotfilesLink.sh
+zsh setup_prezto.zsh
 ```
