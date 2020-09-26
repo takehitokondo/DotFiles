@@ -37,9 +37,15 @@ zstyle ':zle:*' word-style unspecified
 # 補完
 # 補完機能を有効にする
 #fpath=(/usr/local/Cellar/zsh-completions $fpath)
-fpath=(/usr/local/share/zsh-completions $fpath)
-autoload -Uz compinit
-compinit
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+    autoload -Uz compinit
+    compinit
+fi
+#fpath=(/usr/local/share/zsh-completions $fpath)
+#autoload -Uz compinit
+#compinit
 
 # 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -244,3 +250,4 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 alias brew="env PATH=${PATH/\/Users\/kondomac2020\/\.pyenv\/shims:/} brew"
+
