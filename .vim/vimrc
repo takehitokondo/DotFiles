@@ -9,3 +9,35 @@ set smartindent
 filetype on
 syntax enable
 inoremap <silent> jj <ESC>
+set nocompatible
+if &t_Co>1
+	syntax enable
+endif
+
+" Copied from Nakai-san's vimrc
+set nobackup
+
+set cmdheight=1
+set title
+set showcmd
+
+set list
+set listchars=eol:↲,tab:>\ ,extends:<
+set shiftwidth=3
+set tabstop=3
+set number
+set ruler
+"set autoindent
+"set smartindent
+set cindent
+set expandtab
+set incsearch
+set noic
+set hlsearch
+set whichwrap=b,s,h,l,<,>,[,]
+set backspace=indent,eol,start
+
+set notitle
+
+":ab #b /****************************************
+":ab #e *****************************************/
