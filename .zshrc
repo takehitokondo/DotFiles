@@ -238,8 +238,9 @@ bindkey '^R' peco-history-selection
 #export PATH="$PYENV_ROOT/versions/anaconda3-2019.10/bin:$PATH"
 
 # enable pyenv's shims and autocompletion
-#export PYENV_ROOT="$HOME/.pyenv"
-#export PATH="$PYENV_ROOT/bin:$PATH"
-#if command -v pyenv 1>/dev/null 2>&1; then
-#  eval "$(pyenv init -)"
-#fi
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+alias brew="env PATH=${PATH/\/Users\/kondomac2020\/\.pyenv\/shims:/} brew"
