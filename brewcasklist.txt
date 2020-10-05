@@ -1,0 +1,12 @@
+atom
+cyberduck
+docker
+dropbox
+firefox
+github
+karabiner-elements
+sim-daltonism
+slack
+visual-studio-code
+xquartz
+
