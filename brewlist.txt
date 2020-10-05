@@ -1,0 +1,14 @@
+cmake
+curl
+emacs
+git
+markdown
+tree
+zsh-completions
+peco
+openssl
+readline
+sqlite3
+xz
+zlib
+pyenv
