@@ -251,3 +251,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 alias brew="env PATH=${PATH/\/Users\/kondomac2020\/\.pyenv\/shims:/} brew"
 
+# prompt の設定
+autoload -Uz promptinit
+promptinit
+prompt bigfade white black yellow green
+
