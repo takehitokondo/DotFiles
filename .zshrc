@@ -202,17 +202,18 @@ export GREP_OPTIONS='--color=auto'
 # Homebrew's ROOT
 pushd /usr/local >/dev/null; . bin/thisroot.sh; popd >/dev/null
  
-#export LAB='/Users/kondotakehitolab/OneDrive - Hiroshima University/LabOneDrive'
 export LAB="$HOME/OneDrive - Hiroshima University/LabOneDrive"
 export E16="$HOME/OneDrive - Hiroshima University/LabOneDrive/e16/"
 export GTRASD="$HOME/OneDrive - Hiroshima University/LabOneDrive/e16/GTRASD"
 export MS="$HOME/OneDrive - Hiroshima University/LabOneDrive/lvm/MassShift"
 export WOBG="$HOME/OneDrive - Hiroshima University/LabOneDrive/lvm/MassShift/wobg"
 export E16GIT="$HOME/OneDrive - Hiroshima University/LabOneDrive/e16/github"
+export LATEX="$HOME/OneDrive - Hiroshima University/LabOneDrive/MthesisKondo/latex"
 
 # 
 alias startsshs="sh $HOME/OneDrive\ -\ Hiroshima\ University/LabOneDrive/start_sshs.sh"
 
+alias om="open main.pdf"
 
 # prezto の設定ファイルを読み込む
 #
@@ -249,7 +250,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
-alias brew="env PATH=${PATH/\/Users\/kondomac2020\/\.pyenv\/shims:/} brew"
+
+alias brew="env PATH=${PATH/${HOME}\/\.pyenv\/shims:/} brew"
 
 # prompt の設定
 autoload -Uz promptinit
