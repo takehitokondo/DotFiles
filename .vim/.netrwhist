@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='***REMOVED***tick/influxdb/config'
-let g:netrw_dirhist_2='***REMOVED***WIENER/MPOD'
-let g:netrw_dirhist_3='***REMOVED***prometheus/snmp_exporter/snmp_exporter-0.17.0.linux-amd64'
-let g:netrw_dirhist_4='***REMOVED***FMplot'

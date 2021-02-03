@@ -1,7 +1,7 @@
 # .bashrcforpeco
 # for peco-history
 
-export PATH=$PATH:***REMOVED***peco_linux_amd64
+export PATH=$PATH:~/peco_linux_amd64
 
 # Copy&Pasted script from
 # https://qiita.com/yungsang/items/09890a06d204bf398eea

@@ -1,6 +1,4 @@
 # .bashrc for bash on servers
-***REMOVED***
-***REMOVED***
 
 mpoddir='~/WIENER/MPOD'
 #alias r++='g++ `root-config --cflags --libs`'
@@ -22,4 +20,5 @@ export PATH=$PATH:/usr/local/go/bin
 alias taklog="tee -a ~/log/log.txt"
 
 source .bashrcforpeco
+source .bashrcfordaq
 
